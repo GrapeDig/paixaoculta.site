@@ -138,7 +138,50 @@
       </div>
     </header>
 	  
+	  <span style="color: #000000;">
 
+<div id="viewers"> ✅
+
+<span></span> <b> - Assistindo agora. <b>
+
+ 
+
+<script>
+
+document.querySelectorAll("#viewers span")[0].innerHTML = getUsersView();
+
+ 
+
+setInterval(() => {
+
+updatesUsersView();
+
+}, 2500);
+
+ 
+
+function getUsersView() {
+
+return Math.floor(Math.random() * (Math.floor(910) - Math.ceil(690))) + Math.ceil(690);
+
+}
+
+ 
+
+function updatesUsersView() {
+
+var currentUsers = document.querySelectorAll("#viewers span")[0].innerHTML;
+
+var users = Math.floor(Math.random() * (Math.floor(40) - Math.ceil(-40))) + Math.ceil(-40);
+
+currentUsers = parseInt(currentUsers) < 690 ? parseInt(currentUsers) + users * user : parseInt(currentUsers) + users;
+
+document.querySelectorAll("#viewers span")[0].innerHTML = currentUsers;
+
+}
+
+</script>
+	
     <section id="facebook" class="mt-4 d-none" class="comments py-4">
       <div class="container">
         <div class="row justify-content-center">
