@@ -136,12 +136,13 @@
           </div>
         </div>
       </div>
+    </header>
 	  
-	    <span style="color: #FFFFFF;">
+	  <span style="color: #FFFFFF;">
 
-                                                                   <div id="viewers"> ✅
+<div id="viewers"> ✅
 
-                                                         <span></span> <b> - Assistindo agora. <b>
+<span></span> <b> - Assistindo agora. <b>
 
  
 
@@ -171,17 +172,15 @@ function updatesUsersView() {
 
 var currentUsers = document.querySelectorAll("#viewers span")[0].innerHTML;
 
-var users = Math.floor(Math.random() * (Math.floor(40) - Math.ceil(+10))) + Math.ceil(+20);
+var users = Math.floor(Math.random() * (Math.floor(40) - Math.ceil(-40))) + Math.ceil(-40);
 
-currentUsers = parseInt(currentUsers) < 710 ? parseInt(currentUsers) + users * user : parseInt(currentUsers) + users;
+currentUsers = parseInt(currentUsers) < 690 ? parseInt(currentUsers) + users * user : parseInt(currentUsers) + users;
 
 document.querySelectorAll("#viewers span")[0].innerHTML = currentUsers;
 
 }
 
 </script>
-    
-    </header>
 
     <section id="facebook" class="mt-4 d-none" class="comments py-4">
       <div class="container">
